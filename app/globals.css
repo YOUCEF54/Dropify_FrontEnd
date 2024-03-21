@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Lora&family=Manrope:wght@200;300;400&family=Poppins:wght@200;300;400&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap'); */
+@font-face {
+    font-family: 'sofia-pro-semi-bold';
+    src: url('../public/Fonts/Sofia\ Pro\ Semi\ Bold\ Az.woff') format('woff2'),
+  }
+
+@font-face {
+    font-family: 'sofia-pro-bold';
+    src: url('../public/Fonts/Sofia\ Pro\ Bold\ Az.woff') format('woff2'),
+  }
+
+@font-face {
+    font-family: 'sofia-pro-bold';
+    src: url('../public/Fonts/Sofia\ Pro\ Bold\ Az.woff') format('woff2'),
+  }
+  @media only screen and (max-width: 768px) {
+.cont {
+  /* grid-template-columns: repeat(3,1fr); */
+  grid-template-rows: repeat(32,50px);
+  /* grid-column-gap: 15px;
+  grid-row-gap: 15px; */
+} }
+
+.header{
+  background-color: darkorchid;
+  grid-column:1/3 ;
+} 
+
