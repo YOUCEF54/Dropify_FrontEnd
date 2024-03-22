@@ -1,7 +1,7 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
 
-import Example from "@/Components/simple";
+import Example from "@/Components/Navbar";
 import Hero from "@/Components/hero";
 import {Plus_Jakarta_Sans} from '@next/font/google';
 
