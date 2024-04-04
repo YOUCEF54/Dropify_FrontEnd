@@ -88,14 +88,22 @@ export default function Hero(){
                     <div className={classeNames(
                         "bg-zinc-50 border border-zinc-300  p-4 h-[calc((100%/3)*2-8px)] rounded-3xl "
                     )}>Card 2.1</div>
-                    <div className="bg-zinc-50 border border-zinc-300  p-4 h-[calc((100%/3)*1-10px)] rounded-3xl ">Card2.2</div>
+                    <div className={nClassNames(
+                        {"":"bg-zinc-50 border border-zinc-300  p-4 rounded-3xl "},
+                        {"sm:":"h-[calc((100%/3)*1-10px)] bg-purple-600"}
+                    )}>Card2.2</div>
                 </div>
-                <div className="bg-zinc-50 border border-zinc-300  p-4 rounded-3xl sm:row-span-4 max-sm:row-start-4 max-sm:row-span-4 c3">Card 3</div>
+
+                <div className="bg-zinc-50 border border-zinc-300  p-4 rounded-3xl sm:row-span-4 max-sm:row-start-4 max-sm:row-span-4 c3">
+                    Card 3
+                </div>
+
                 <div className={classeNames(
                     "bg-zinc-50 border border-zinc-300 p-4 rounded-3xl",
                     "sm:col-span-2 sm:row-start-4 sm:row-span-3",
                     "max-sm:row-span-4"
                 )}>Card 4</div>
+
                 <div className={nClassNames(
                     {"":"bg-zinc-50 border border-zinc-300 p-4 rounded-3xl"},
                     {"sm:":"col-span-2 row-start-4 row-span-3"},
