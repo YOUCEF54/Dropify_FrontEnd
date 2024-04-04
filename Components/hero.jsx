@@ -3,6 +3,7 @@ import { CgArrowTopRight } from 'react-icons/cg';
 import VectImg from "../public/VectImg.png"
 import VectBill from "../public/VectBill.png"
 import Vect1 from "../public/Vect1.svg"
+import AIO from "../public/AIO.svg" 
 export default function Hero(){
 
     const classeNames = (...Classes) => {
@@ -67,53 +68,72 @@ export default function Hero(){
                 />
             </div>
             <div className="Features w-full flex flex-col items-center justify-center mt-[30vw] max-sm:mt-[40vw] max-md:mt-[50vw]">
-            <button className="opacity-85 py-[0.6rem] text-[1.4vw] px-6 rounded-full border-l bg-sky-100 border-sky-300 text-dBlue mb-4">Features</button>
+            <button className="opacity-85 py-[0.6rem] lg:text-[1.4vw] text-[1rem] px-6 rounded-full border-l bg-sky-100 border-sky-300 text-dBlue mb-4">Features</button>
             <h1 className="text-center font-jakarta font-bold text-[4.1vw]">Dropify Is Not Just A Platform</h1>
 
-            <div className="grid sm:grid-rows-6 max-sm:grid-rows-[32] grid-cols-3 cont  gap-4 lg:w-[100vw] w-[90vw] max-sm:grid-cols-2 max-sm:grid-flow-row mt-8 h-[30rem] max-sm:h-[60rem] ">
+            <div className="grid sm:grid-rows-12 max-sm:grid-rows-[32] grid-cols-3 cont  gap-4 lg:w-[85vw] w-[90vw] max-sm:grid-cols-2 max-sm:grid-flow-row mt-8 h-[40rem] max-sm:h-[60rem] ">
 
                 <div className={classeNames(
                     "bg-zinc-50 border border-zinc-300 items-center p-4 rounded-3xl ",
-                    "sm:row-span-3",
+                    "sm:row-span-6 sm:row-start-1",
                     "max-sm:row-end-5 max-sm"
                 )}>
                     <div className={nClassNames(
                         {"":'bg-zinc-300 m-auto w-full rounded-2xl h-[60%]'},
                         {"max-sm:":" row-start-1"}
                     )}></div>
-                    <h1></h1>
+                    <h1>card 1</h1>
 
                 </div>
-                <div className="rounded-3xl   row-span-3 max-sm:row-start-15 flex flex-col justify-between c2">
+                <div className="rounded-3xl   sm:row-span-6 sm:row-start-1 max-sm:row-start-15 flex flex-col gap-4 c2">
                     <div className={classeNames(
-                        "bg-zinc-50 border border-zinc-300  p-4 h-[calc((100%/3)*2-8px)] rounded-3xl "
-                    )}>Card 2.1</div>
+                        "border border-zinc-300  p-[1.7vw] h-[calc((100%/3)*2.03-8px)] rounded-3xl "
+                    )}>
+                        <div>
+                            <h1 className=' font-bold text-lg mb-2'>Dropify Marketplace</h1>
+                            <p className=' text-gray-700  text-sm'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem.</p>
+                            <div className=' inline-flex justify-end w-full '>
+                                <Image
+                                    src={AIO}
+                                    alt="Dropify"
+                                    height={500}
+                                    width={500}
+                                    className=" lg:w-[60%] "
+                                    priority
+                                />
+                                
+                            </div>
+                        </div>
+                    </div>
                     <div className={nClassNames(
-                        {"":"bg-zinc-50 border border-zinc-300  p-4 rounded-3xl "},
+                        {"":"h-[calc((100%/3)*1-10px)] bg-zinc-50 border border-zinc-300  p-4 rounded-3xl "},
                         {"sm:":"h-[calc((100%/3)*1-10px)] bg-purple-600"}
                     )}>Card2.2</div>
                 </div>
 
-                <div className="bg-zinc-50 border border-zinc-300  p-4 rounded-3xl sm:row-span-4 max-sm:row-start-4 max-sm:row-span-4 c3">
-                    Card 3
+                <div className={nClassNames(
+                    {"":"bg-zinc-  border border-zinc-300 p-4 rounded-3xl"},
+                    {"":" row-start-1 row-span-8"},
+                    {"max-sm:":" row-start-5 row-span-3 "},
+                    // {"lg:":"bg-orange-500"}
+                )}>Card 3
                 </div>
 
                 <div className={classeNames(
                     "bg-zinc-50 border border-zinc-300 p-4 rounded-3xl",
-                    "sm:col-span-2 sm:row-start-4 sm:row-span-3",
+                    "sm:col-span-2 sm:row-start-7 sm:row-span-6",
                     "max-sm:row-span-4"
                 )}>Card 4</div>
 
                 <div className={nClassNames(
-                    {"":"bg-zinc-50 border border-zinc-300 p-4 rounded-3xl"},
-                    {"sm:":"col-span-2 row-start-4 row-span-3"},
-                    {"max-sm:":"row-start-5 row-span-3"}
+                    {"":"bg-zinc-  border border-zinc-300 p-4 rounded-3xl row-start-9 row-span-4"},
+                    // {"sm:":"row-start-9 row-span-3"},
+                    {"max-sm:":" row-start-5 row-span-2 "},
+                    // {"lg:":"bg-orange-500"}
                 )}>Card 5</div>
             </div>
             </div>
-            <div className='cont'>
-                <div className='header'>header</div>
-            </div>
+
             </div>
         </div>
     )
